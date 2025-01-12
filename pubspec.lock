@@ -81,14 +81,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.18.0"
-  country_code_picker:
-    dependency: "direct main"
-    description:
-      name: country_code_picker
-      sha256: fdc2ae84d0342d4a7c6ebc83fbe002a70c8231ff5734505676292fc2c2cc4433
-      url: "https://pub.dev"
-    source: hosted
-    version: "3.1.0"
   cross_file:
     dependency: transitive
     description:
@@ -288,14 +280,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "10.8.0"
-  form_field_validator:
-    dependency: "direct main"
-    description:
-      name: form_field_validator
-      sha256: c1fc6c89b5525288c02fe989a88c6f30bb6072da4f9dded17a04cf68c4abfb87
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.1.0"
   google_fonts:
     dependency: "direct main"
     description:
@@ -384,14 +368,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.2.1+1"
-  intl:
-    dependency: transitive
-    description:
-      name: intl
-      sha256: "00f33b908655e606b86d2ade4710a231b802eec6f11e87e4ea3783fd72077a50"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.20.1"
   leak_tracker:
     dependency: transitive
     description:
