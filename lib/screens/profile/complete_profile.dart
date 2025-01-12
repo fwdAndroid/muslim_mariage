@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart'; // Import Firestore
 import 'package:muslim_mariage/screens/profile/upload_photo.dart';
@@ -126,7 +127,10 @@ class _CompleteProfileState extends State<CompleteProfile> {
       return;
     }
 
-    FirebaseFirestore.instance.collection('profiles').add({
+    FirebaseFirestore.instance
+        .collection('users')
+        .doc(FirebaseAuth.instance.currentUser!.uid)
+        .update({
       'profileCreator': _profileCreator,
       'fatherName': _fatherController.text,
       'motherName': _motherController.text,

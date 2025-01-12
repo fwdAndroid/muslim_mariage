@@ -68,8 +68,6 @@ class _LoginScreenState extends State<LoginScreen> {
                             // Retrieve user data
                             final userData = userDoc.data();
                             final fullName = userData?['fullName'];
-                            final phone = userData?['phone'];
-                            final location = userData?['location'];
 
                             // Check if any field is null or empty
                             if ((fullName == null || fullName.isEmpty) ||
