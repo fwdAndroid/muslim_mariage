@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:muslim_mariage/screens/main/main_dashboard.dart';
+import 'package:muslim_mariage/utils/showmesssage.dart';
 import 'package:muslim_mariage/widgets/save_button.dart';
 
 class LocationConfrim extends StatefulWidget {
@@ -47,6 +48,7 @@ class _LocationConfrimState extends State<LocationConfrim> {
                 onTap: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (builder) => MainDashboard()));
+                  showMessageBar("Location Access ", context);
                   // Action for enabling location
                 },
                 title: "Allow Location Access",
@@ -55,6 +57,7 @@ class _LocationConfrimState extends State<LocationConfrim> {
             SizedBox(height: 16),
             TextButton(
               onPressed: () {
+                showMessageBar("Set Location Later ", context);
                 Navigator.push(context,
                     MaterialPageRoute(builder: (builder) => MainDashboard()));
                 // Action for entering location manually
